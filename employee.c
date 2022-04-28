@@ -1,8 +1,6 @@
 #include<stdio.h>
 #include<conio.h>
 #include<string.h>
-
-//Declaration of structure org
 struct org
 {
 char name[30];
@@ -11,13 +9,11 @@ long emp_mobile;
 };
 void main()
 {
-//declaration of org member as array
 struct org employee[20];
 int n,i;
 printf("\nEnter the number of employeed in your organization(<=20):");
 scanf("%d",&n);
 
-//enter values using for loop
 for(i=0;i<n;i++)
 {
 printf("\nEnter Person %d\n Name :",i+1);
@@ -30,7 +26,6 @@ printf("\nEmployee Salary :");
 scanf("%d",&employee[i].salary);
 }
 
-//printing employee information
 printf("\nEmployees Information\n");
 for(i=0;i<n;i++)
 {
